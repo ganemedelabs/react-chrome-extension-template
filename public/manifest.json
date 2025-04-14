@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "react-chrome-extension-template",
+    "author": "ganemedelabs",
+    "version": "1.0.0",
+    "description": "A template for Chrome extensions using React, Vite, TypeScript, and Vitest.",
+    "permissions": ["activeTab", "contextMenus"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "serviceWorker.bundle.js",
+        "type": "module"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["images/*"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "action": {
+        "default_title": "React Chrome Extension Template",
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "images/icon-16.png",
+            "48": "images/icon-48.png",
+            "128": "images/icon-128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "js": ["content.bundle.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    }
+}
