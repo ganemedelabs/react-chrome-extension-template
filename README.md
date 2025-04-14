@@ -58,7 +58,7 @@ A modern React Chrome extension template built with TypeScript, Vite, and Vitest
 
 4. **Configure Environment (for Publishing)**
 
-    - Create a `.env` file in the root directory (see [Publish Script](#publish-script) for details).
+    - Create a `.env` file in the root directory (see [Publish Script](#publish-script-publishcjs) for details).
 
 ## 📄 Scripts
 
